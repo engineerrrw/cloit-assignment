@@ -1,9 +1,9 @@
 const routes = [
   {
-    path: '/',
+    path: '/index',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      { path: '/youtube', component: () => import('pages/IndexPage.vue') }
     ]
   },
 
@@ -12,6 +12,13 @@ const routes = [
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')
+  },
+  {
+    path: '/', 
+    component: () => import('layouts/HomeLayout.vue'),
+    children:[
+      { path: '/', component: () => import('pages/HomePage.vue') }
+    ]
   }
 ]
 
