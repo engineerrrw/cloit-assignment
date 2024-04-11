@@ -1,4 +1,4 @@
-# Quasar App (youtube-clone-app)
+# Quasar App (cloit-assignment)
 
 A Quasar Project
 
